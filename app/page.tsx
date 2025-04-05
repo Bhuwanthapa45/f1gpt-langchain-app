@@ -117,7 +117,7 @@ const Home = () => {
 
     const reader = res.body.getReader();
     const decoder = new TextDecoder();
-    let assistantMessage = {
+    const assistantMessage = {
       id: crypto.randomUUID(),
       role: "assistant",
       content: "",
